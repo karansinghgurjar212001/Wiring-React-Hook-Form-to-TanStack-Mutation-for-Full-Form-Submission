@@ -67,7 +67,7 @@ export default function ThreadForm() {
       {errors.root?.server && <p role="alert">{errors.root.server.message}</p>}
 
       <button type="submit" disabled={mutation.isPending}>
-        {mutation.isPending ? "Creating…" : "Create thread"}
+        {mutation.isPending ? "Creating..." : "Create thread"}
       </button>
     </form>
   );
